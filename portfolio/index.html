@@ -16,7 +16,7 @@
 <body>
 <div class="nav">  
         <ul>
-      <li id="navbutton" style="    padding-left: 0px;
+      <li id="navbutton" onclick="navbaroff();" style="padding-left: 0px;
         padding-right: 0px; " class="slider_button pc_off menu-toggle ">
         <span></span><span></span><span></span><span></span> <i id="navibutton"class="fa-solid fa-code"></i><a href="">
       </li></a>
@@ -48,28 +48,28 @@
     <div class="navigation">
       <div class="nav_mobile"></div>
       <ul class="list_item">
-        <li class="list-item " style="--color:#ffa117"><a id="" class="a-link" href="#">
+        <li class="list-item " style="--color:#ffa117"><a id="display-none" class="a-link" href="#">
           <span class="icon">
             <i class="fa-solid fa-house-blank text"></i>
           </span>
           <span class="text">Home</span>
         </a></li>
 
-        <li class="list-item " style="--color:#0fc70f"><a id="" class="a-line" href="#">
+        <li class="list-item " style="--color:#0fc70f"><a id="display-none" class="a-link" href="#">
           <span class="icon">
             <i class="fa-solid fa-align-justify text"></i>
           </span>
           <span class="text">About</span>
         </a></li>
 
-        <li class="list-item " style="--color:#2196f3"><a id="" class="a-link" href="#">
+        <li class="list-item " style="--color:#2196f3"><a id="display-none" class="a-link" href="#">
           <span class="icon">
             <i class="fa-solid fa-brackets-curly text"></i>
           </span>
           <span class="text">Portfolio</span>
         </a></li>
 
-        <li class="list-item " style="--color:#b145e9"><a id="" class="a-link" href="#">
+        <li class="list-item " style="--color:#b145e9"><a id="display-none" class="a-link" href="#">
           <span class="icon">
             <i class="fa-solid fa-hashtag text"></i>
           </span>
@@ -79,8 +79,38 @@
       </ul>
     </div>
   </div>
+<!-- javascript -->
+<script>
+function navbaroff() {
+    
+    const aLink = document.querySelectorAll('.a-link');
+    if (aLink.has("display-none")) {
+        aLink[0].setAttribute("id", "display-non"),
+        aLink[1].setAttribute("id", "display-non"),
+        aLink[2].setAttribute("id", "display-non"),
+        aLink[3].setAttribute("id", "display-non")
+        alert("off")
+        
+    } else {
+        aLink[0].setAttribute("id", "display-none"),
+        aLink[1].setAttribute("id", "display-none"),
+        aLink[2].setAttribute("id", "display-none"),
+        aLink[3].setAttribute("id", "display-none")
+        alert("on")
+    };
+    
+  }
+</script>
 
+
+
+  <!-- js include -->
   <script src="./js/script.js"></script>
+  <!-- jquery -->
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
 </body>
 
 </html>
