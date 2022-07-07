@@ -129,7 +129,7 @@ body {
     inset: 50px 0 -60px 0;
     width: 0px;
     min-height: 500px;
-    background: rgb(39, 172, 180);
+    background: rgb(255, 200, 0);
     transition: 0.5s;
     display: flex;
     justify-content: center;
@@ -138,7 +138,7 @@ body {
 
 }
 .nav_mobile{
-    padding-left: 28%;
+    padding-left: 30%;
 }
 .navigation.open{
     width: 100%;
@@ -149,7 +149,6 @@ body {
     left: 0;
     width: 100%;
     height: 600px;
-    border-bottom: 1px solid rgb(0, 0, 0,0.25) ;
     cursor: pointer;
     display: flex;
     justify-content:flex-start;
@@ -250,7 +249,7 @@ body {
     height:60px ;
     display: flex;
     align-items: center;
-    color: #333;
+    color:#333;
     opacity: 0;
     visibility: hidden;
     transition: 0.5s;

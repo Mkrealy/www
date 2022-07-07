@@ -1,15 +1,29 @@
 const menuToggle = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('.navigation');
 const aLink = document.querySelectorAll('.a-link');
-menuToggle.onclick = ()=>{
-    navigation.classList.toggle('open')
-    
+
+// this function is Disables links in sidebar and open the side bar on mobile mod
+function navbaroff() 
+{
+    navigation.classList.toggle('open');
+
+    const aLink = document.querySelectorAll('.a-link');
+
+    var veriableid = aLink[0].id
+    if (veriableid == 'display-none') {
+        aLink[0].id = ""
+        aLink[1].id = ""
+        aLink[2].id = ""
+        aLink[3].id = ""
+
+    } else {
+        aLink[0].id = "display-none",
+            aLink[1].id = "display-none",
+            aLink[2].id = "display-none",
+            aLink[3].id = "display-none"
     };
-const listItems = document.querySelector('list-item');
-listItems.forEach( item => {
-    item.onclick = () =>{
-        listItems.forEach(item =>
-            item.classList.remove('active'));
-            item.classList.add('active');
-        }
-});
+};
+
+
+
+
