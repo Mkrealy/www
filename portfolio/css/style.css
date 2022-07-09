@@ -35,9 +35,7 @@ body {
     overflow: hidden;
     z-index: 1;
     transition: 0.5s;
-    /* margin:20% 20px auto 40px; */
     border-bottom: 1px solid var(--c);
-    /* border: none; */
     text-align: center;
 }
 
@@ -65,10 +63,6 @@ body {
 .slider_button:hover{
     color: black;
 }
-#navbutton, .slider_button{
-
-}
-
 .nav ul li:hover span {
     transform: translateY(0) scale(1);
 }
@@ -119,80 +113,59 @@ body {
 .container{
     min-width: 100vh;
     width: 100%;
-    display: flex;
     justify-content: flex-start;
     align-items: center;
     background: #523d3d;
 }
 .navigation{
     position: fixed;
-    inset: 50px 0 -60px 0;
+    inset:50px 0 -10vh 0;
     width: 0px;
     min-height: 500px;
-    background: rgb(255, 200, 0);
+    background: rgb(107, 106, 101);
     transition: 0.5s;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     padding-top: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
 
 }
 .nav_mobile{
-    padding-left: 30%;
+    padding-left: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+
 }
 .navigation.open{
     width: 100%;
+    /* height: 100%; */
 }
-.navigation .menu-toggle{
-    position: absolute   ;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 600px;
-    cursor: pointer;
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    padding: 0 20px;
-}
-.navigation .menu-toggle::before{
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 2px;
-    background: #333;
-    transform:translateX(-8px);
-    transition: 0.5s;
-}
-.navigation.open .menu-toggle::after{
-    content: '';
-    position: absolute;
-    width: 30px;
-    height: 2px;
-    background: #333;
-    transform: translateY(8px);
-    transition: 0.5s;
-    box-shadow: 0 -8px 0 #333;
-}
-.navigation.open .menu-toggle::after{
-    transform: translateY(0) rotate(-45deg);
-    box-shadow: none;
-}
+/*  */
 .navigation ul{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    width: 100%;
+    gap: 12vh;
+    width: 190%;
+    height: 100%;
+    font-size: 32px;
 }
 .navigation ul li {
+    /* border: 1px solid beige; */
     list-style: none;
     position: relative;
-    width: 100%;
-    height: 60px;
+    width: 60%;
+    height: 10vh;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    padding: 0 5px;
+    padding: 0;
     cursor: pointer;
     transition: 0.5s;
 }
@@ -216,7 +189,6 @@ body {
     position: relative;
     display: block;
     min-width: 50px;
-    height: 55px;
     line-height: 60px;
     color: #222;
     border-radius: 10px;
@@ -245,8 +217,8 @@ body {
 }
 .navigation ul li a .text{
     position: relative;
-    padding: 0 15px;
-    height:60px ;
+    padding: 0;
+    height:10vh ;
     display: flex;
     align-items: center;
     color:#333;
@@ -261,6 +233,79 @@ body {
 .navigation ul li.active a.text{
     color:var(--color)
 }
-.nav_mobile{
+.text{
+    font-size: 26px;
+}
+@media (min-wdith:768px)
+    {
+        .container .pc_off{
+            display: none;
+    }
 
 }
+@media (max-height:680px)
+    {
+        .navigation ul{
+            gap: 10vh;
+    }
+    .navigation ul li{
+        height: 10vh;
+    }
+}
+@media (min-height:681px){     
+    .navigation ul li{
+    height: 8vh;
+}
+}
+@media (max-height:570px){     
+    .navigation ul li{
+    height: 8vh;
+    padding-top: 0;
+}
+}
+
+
+/* mobile effect sidebar */
+.container .navigation .list_items{
+    list-style-type: none;
+    padding-left: 32%;
+    display: flex;
+    position: fixed;
+}
+.container .navigation .list_items .list_item{
+    flex-direction: row;
+    --c: rgb(255, 200, 0);
+    color: rgb(211, 211, 211);
+    font-size: 16px;
+    border-radius: 0%;
+    width: 5em;
+    height: 2em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    line-height: 2em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    border-bottom: 1px solid var(--c);
+    text-align: center;
+}
+.container .navigation .list_items .list_item span{
+    border: none;
+    position: absolute;
+    width: 25%;
+    height: 80%;
+    background-color: var(--c);
+    transform: translateY(50%);
+    border-radius: 0%;
+    left: calc((var(--n) - 1) *55%);
+    transition: 0.3s;
+    transition-delay: calc((var(--n) - 1) * 0.08s);
+    z-index: -1;
+}
+.list_item{
+        /* background-color: red; */
+    }
+    .container .navigation .nav .list_items .list_item span{}

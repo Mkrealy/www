@@ -15,12 +15,14 @@ function navbaroff()
         aLink[1].id = ""
         aLink[2].id = ""
         aLink[3].id = ""
+        aLink[4].id = ""
 
     } else {
         aLink[0].id = "display-none",
             aLink[1].id = "display-none",
             aLink[2].id = "display-none",
-            aLink[3].id = "display-none"
+            aLink[3].id = "display-none",
+            aLink[4].id = "display-none";
     };
 };
 
