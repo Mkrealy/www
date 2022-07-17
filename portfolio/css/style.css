@@ -1,3 +1,5 @@
+
+
 body {
     margin: 0;
     background-color: black;
@@ -16,10 +18,14 @@ body {
     padding-top:60px;
     display: flex;
     position: fixed;
+
 }
 
 .nav ul li {
+    border-radius:13px;
+    background:black;
     flex-direction: row;
+    opacity: 0.8;
     --c: rgb(255, 200, 0);
     color: rgb(211, 211, 211);
     font-size: 16px;
@@ -221,7 +227,7 @@ body {
     height:10vh ;
     display: flex;
     align-items: center;
-    color:#333;
+    color:rgb(255, 254, 254);
     opacity: 0;
     visibility: hidden;
     transition: 0.5s;
@@ -305,21 +311,108 @@ body {
     transition-delay: calc((var(--n) - 1) * 0.08s);
     z-index: -1;
 }
-.list_item{
-        /* background-color: red; */
-    }
 
 
 
-.main-content{
-    padding:55px ;
-    background-color: black; 
+
+ .main-content{
+    padding:30px ;
+    background-color: re8; 
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: rgb(211, 211, 211);
     text-align: center;
     
 }
-.main-content p{
-    padding: 25px;
-    border-bottom: 10 px solid red;
+#myimg{
+    margin-top: 100px;
+    border-radius: 5px;
+    
 }
+
+
+/* main content tex effect */
+.main-content{
+    display:block;
+    margin:auto;
+    padding-top: 100px;    
+
+}
+    .Iam {
+    padding: 2em 5em;
+    font: bold 40px/50px ;
+    color: #999;
+    
+  }
+
+  
+  .Iam .innerIam {
+    display: inline-block;
+    color: rgb(255, 254, 254);
+    position: relative;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+    z-index: -9;
+    font-size: 26px;
+  
+  
+  /*animation*/
+  -webkit-animation:move 5s;
+     -moz-animation:move 5s;
+      -ms-animation:move 5s;
+       -o-animation:move 5s;
+          animation:move 5s;
+  /*animation-iteration-count*/
+  -webkit-animation-iteration-count:infinite;
+     -moz-animation-iteration-count:infinite;
+      -ms-animation-iteration-count:infinite;
+       -o-animation-iteration-count:infinite;
+          animation-iteration-count:infinite;
+  /*animation-delay*/
+  -webkit-animation-delay:0.5s;
+     -moz-animation-delay:0.5s;
+      -ms-animation-delay:0.5s;
+       -o-animation-delay:0.5s;
+          animation-delay:0.5s;
+  }
+  @keyframes move{
+    0%  { top: -25px; }
+    20% { top: 25px; }
+    40% { top: -25px; }
+    60% { top: 25px; }
+    80% { top: -25px; }
+    100% { top: 25px; }
+  }
+  
+  @-webkit-keyframes move {
+    0%  { top: -25px; }
+    20% { top: 25px; }
+    40% { top: -25px; }
+    60% { top: 25px; }
+    80% { top: -25px; }
+    100% { top: 25px; }
+  }
+  @-moz-keyframes move {
+    0%  { top: -25px; }
+    20% { top: 25px; }
+    40% { top: -25px; }
+    60% { top: 25px; }
+    80% { top: -25px; }
+    100% { top: 25px; }
+  }
+  @-o-keyframes move {
+    0%  { top: -25px; }
+    20% { top: 25px; }
+    40% { top: -25px; }
+    60% { top: 25px; }
+    80% { top: -25px; }
+    100% { top: 25px; }
+  }
+  @keyframes move {
+      0%  { top: -25px; }
+      20% { top: 25px; }
+      40% { top: -25px; }
+      60% { top: 25px; }
+      80% { top: -25px; }
+      100% { top: 25px; }
+  }

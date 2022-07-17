@@ -27,5 +27,4 @@ function navbaroff()
 };
 
 
-
-
+// main conteent text effect
