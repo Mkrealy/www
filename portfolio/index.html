@@ -11,10 +11,13 @@
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
     <!-- font google -->
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
-<body>
-    <div class="nav">
+<body class="body"
+style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
+    <div class="nav1">
         <ul  style="z-index: 1;">
             <li id="navbutton" onclick="navbaroff();" style="padding-left: 0px;
               padding-right: 0px; " class="slider_button pc_off">
@@ -45,11 +48,11 @@
     </div>
 
 
-    <div class="pc_off  container ">
-        <div class="navigation">
-            <div class="nav_mobile nav">
+    <div class="pc_off  container1 ">
+        <div class="navigation1">
+            <div class="nav_mobile nav1">
                 <ul class="list_items">
-                    <li class="list-item a-link" id="display-none" style="--color:#ffa117">
+                    <li class="list-item a-link mt-0" id="display-none" style="--color:#ffa117">
                       <span></span><span></span><span></span><span></span>
                         <a href="#">
                             <p class="text">Home</p>
@@ -80,20 +83,36 @@
 
     </div>
     <div class="main-content">
+        
         <div class="content-text">
             <div class="Iam">
-                  <div class="innerIam">
-                    Hello Guys<br />
+                  <div class="innerIam fw">
+                    <p class="fs-6 color-text-w"> Hello, Welcome to my Website</p><br />
 <br> 
-                    You're Welcome
+                    
                     </div>
 
                 
             </div>
+            <hr>
+            <p class="fs-4 color-text-w"> Hi, I'm Mansur & I'm a "Full-Stack Developer"</p>
         </div>
-        <hr style="margin-top: 25px;">
-        <img id="myimg" src="https://picsum.photos/2000/1200" alt="Snow" style="width:100%;max-width:900px;">
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <img id="myimg" src="./images/image2.jpg" alt="Snow">
+                    <p class="fs-5 color-text-w"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="col-md ">
+                    <img id="myimg" src="images/images1.jpg" alt="Snow">
+                    <p class="fs-5 color-text-w"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        
     </div>
     <!-- javascript -->
     <script>

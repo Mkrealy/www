@@ -1,27 +1,27 @@
 
 
-body {
+.body {
     margin: 0;
     background-color: black;
     height: 1000px;
 }
-.nav{
+.nav1 { 
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: black;
 }
-.nav ul {
+.nav1 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    padding-top:60px;
+    padding-top:120px;
     display: flex;
     position: fixed;
 
 }
 
-.nav ul li {
+.nav1 ul li {
     border-radius:13px;
     background:black;
     flex-direction: row;
@@ -45,7 +45,7 @@ body {
     text-align: center;
 }
 
-.nav ul li span {
+.nav1 ul li span {
     border: none;
     position: absolute;
     width: 25%;
@@ -60,7 +60,7 @@ body {
 }
 
 
-.nav ul li:hover{
+.nav1 ul li:hover{
     color: black;
 }
 .slider_button .fa-code{
@@ -69,23 +69,23 @@ body {
 .slider_button:hover{
     color: black;
 }
-.nav ul li:hover span {
+.nav1 ul li:hover span {
     transform: translateY(0) scale(1);
 }
 
-.nav ul li span:nth-child(1) {
+.nav1 ul li span:nth-child(1) {
     --n: 1;
 }
 
-.nav ul li span:nth-child(2) {
+.nav1 ul li span:nth-child(2) {
     --n: 2;
 }
 
-.nav ul li span:nth-child(3) {
+.nav1 ul li span:nth-child(3) {
     --n: 3;
 }
 
-.nav ul li span:nth-child(4) {
+.nav1 ul li span:nth-child(4) {
     --n: 4;
 }
  .slider_nav{
@@ -116,14 +116,14 @@ body {
     padding: 0;
     box-sizing:border-box;
 }
-.container{
+.container1{
     min-width: 100vh;
     width: 100%;
     justify-content: flex-start;
     align-items: center;
     background: #523d3d;
 }
-.navigation{
+.navigation1{
     position: fixed;
     inset:0px 0 -10vh 0;
     width: 0px;
@@ -133,7 +133,7 @@ body {
     display: flex;
     justify-content: center;
     /* align-items: flex-start; */
-    padding-top: 100px;
+    padding-top: 0px;
 
     display: flex;
     align-items: center;
@@ -149,12 +149,12 @@ body {
     background-color: black;
 
 }
-.navigation.open{
+.navigation1.open{
     width: 100%;
     /* height: 100%; */
 }
 /*  */
-.navigation ul{
+.navigation1 ul{
     display: flex;
     flex-direction: column;
     gap: 12vh;
@@ -162,7 +162,7 @@ body {
     height: 100%;
     font-size: 32px;
 }
-.navigation ul li {
+.navigation1 ul li {
     /* border: 1px solid beige; */
     list-style: none;
     position: relative;
@@ -175,15 +175,15 @@ body {
     cursor: pointer;
     transition: 0.5s;
 }
-.navigation ul li.active{
+.navigation1 ul li.active{
     transform: translateX(30px);
 
 }
-.navigation.open ul li.active{
+.navigation1.open ul li.active{
     transform: translateX(10px);
 }
 
-.navigation ul li a{
+.navigation1 ul li a{
     text-decoration: none;
     position: relative;
     display: flex;
@@ -191,7 +191,7 @@ body {
     align-items: center;
     text-align: center;
 }
-.navigation ul li a .icon{
+.navigation1 ul li a .icon{
     position: relative;
     display: block;
     min-width: 50px;
@@ -201,11 +201,11 @@ body {
     font-size:16px;
     transition: 0.5s;
 }
-.navigation ul li.active a .icon{
+.navigation1 ul li.active a .icon{
     color: #222;
     background-color: (var--color);
 }
-.navigation ul li a .icon::before{
+.navigation1 ul li a .icon::before{
     content:'';
     position: absolute;
     top: 10px;
@@ -218,10 +218,10 @@ body {
     opacity: 0;
     transition: 0.5s;
 }
-.navigation ul li.active a .icon::before{
+.navigation1 ul li.active a .icon::before{
     opacity: 0.5s;
 }
-.navigation ul li a .text{
+.navigation1 ul li a .text{
     position: relative;
     padding: 0;
     height:10vh ;
@@ -232,11 +232,11 @@ body {
     visibility: hidden;
     transition: 0.5s;
 }
-.navigation.open ul li a .text{
+.navigation1.open ul li a .text{
     opacity: 1;
     visibility: visible;
 }
-.navigation ul li.active a.text{
+.navigation1 ul li.active a.text{
     color:var(--color)
 }
 .text{
@@ -244,27 +244,27 @@ body {
 }
 @media (min-wdith:768px)
     {
-        .container .pc_off{
+        .container1 .pc_off{
             display: none;
     }
 
 }
 @media (max-height:680px)
     {
-        .navigation ul{
+        .navigation1 ul{
             gap: 10vh;
     }
-    .navigation ul li{
+    .navigation1 ul li{
         height: 10vh;
     }
 }
 @media (min-height:681px){     
-    .navigation ul li{
+    .navigation1 ul li{
     height: 8vh;
 }
 }
 @media (max-height:570px){     
-    .navigation ul li{
+    .navigation1 ul li{
     height: 8vh;
     padding-top: 0;
 }
@@ -272,13 +272,13 @@ body {
 
 
 /* mobile effect sidebar */
-.container .navigation .list_items{
+.container1 .navigation1 .list_items{
     list-style-type: none;
     padding-left: 32%;
     display: flex;
     position: fixed;
 }
-.container .navigation .list_items .list_item{
+.container1 .navigation1 .list_items .list_item{
     flex-direction: row;
     --c: rgb(255, 200, 0);
     color: rgb(211, 211, 211);
@@ -298,7 +298,7 @@ body {
     border-bottom: 1px solid var(--c);
     text-align: center;
 }
-.container .navigation .list_items .list_item span{
+.container1 .navigation1 .list_items .list_item span{
     border: none;
     position: absolute;
     width: 25%;
@@ -316,34 +316,44 @@ body {
 
 
  .main-content{
-    padding:30px ;
-    background-color: re8; 
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 7ch;
     color: rgb(211, 211, 211);
     text-align: center;
     
 }
+.img-container{
+    display: inline;
+}
+.img{
+    list-style: none;
+}
 #myimg{
-    margin-top: 100px;
+    margin-top: 70px;
     border-radius: 5px;
+    width:100%;
+    
     
 }
-
 
 /* main content tex effect */
 .main-content{
     display:block;
     margin:auto;
-    padding-top: 100px;    
+    padding-top: 150px;    
 
 }
     .Iam {
-    padding: 2em 5em;
     font: bold 40px/50px ;
     color: #999;
     
   }
-
+.color-text-w-opa{
+    color: rgb(211, 211, 211);
+    opacity: 0.8;
+}
+.color-text-w{
+    color: rgb(211, 211, 211);
+}
   
   .Iam .innerIam {
     display: inline-block;
@@ -353,15 +363,15 @@ body {
     top: 0;
     left: 0;
     z-index: -9;
-    font-size: 26px;
+    font-size: 20px;
   
   
   /*animation*/
-  -webkit-animation:move 5s;
-     -moz-animation:move 5s;
-      -ms-animation:move 5s;
-       -o-animation:move 5s;
-          animation:move 5s;
+  -webkit-animation:move 10s;
+     -moz-animation:move 10s;
+      -ms-animation:move 10s;
+       -o-animation:move 10s;
+          animation:move 10s;
   /*animation-iteration-count*/
   -webkit-animation-iteration-count:infinite;
      -moz-animation-iteration-count:infinite;
@@ -377,42 +387,67 @@ body {
   }
   @keyframes move{
     0%  { top: -25px; }
-    20% { top: 25px; }
+    10% { top: 25px; }
+    20% { top: -25px; }
+    30% { top: 25px; }
     40% { top: -25px; }
-    60% { top: 25px; }
+    50% { top: 25px; }
+    60% { top: -25px; }
+    70% { top: 25px; }
     80% { top: -25px; }
-    100% { top: 25px; }
+    90% { top: 25px; }
+    100% { top: -25px; }
   }
   
   @-webkit-keyframes move {
     0%  { top: -25px; }
-    20% { top: 25px; }
+    10% { top: 25px; }
+    20% { top: -25px; }
+    30% { top: 25px; }
     40% { top: -25px; }
-    60% { top: 25px; }
+    50% { top: 25px; }
+    60% { top: -25px; }
+    70% { top: 25px; }
     80% { top: -25px; }
-    100% { top: 25px; }
+    90% { top: 25px; }
+    100% { top: -25px; }
   }
   @-moz-keyframes move {
     0%  { top: -25px; }
-    20% { top: 25px; }
+    10% { top: 25px; }
+    20% { top: -25px; }
+    30% { top: 25px; }
     40% { top: -25px; }
-    60% { top: 25px; }
+    50% { top: 25px; }
+    60% { top: -25px; }
+    70% { top: 25px; }
     80% { top: -25px; }
-    100% { top: 25px; }
+    90% { top: 25px; }
+    100% { top: -25px; }
   }
   @-o-keyframes move {
     0%  { top: -25px; }
-    20% { top: 25px; }
+    10% { top: 25px; }
+    20% { top: -25px; }
+    30% { top: 25px; }
     40% { top: -25px; }
-    60% { top: 25px; }
+    50% { top: 25px; }
+    60% { top: -25px; }
+    70% { top: 25px; }
     80% { top: -25px; }
-    100% { top: 25px; }
+    90% { top: 25px; }
+    100% { top: -25px; }
   }
   @keyframes move {
-      0%  { top: -25px; }
-      20% { top: 25px; }
-      40% { top: -25px; }
-      60% { top: 25px; }
-      80% { top: -25px; }
-      100% { top: 25px; }
+    0%  { top: -25px; }
+    10% { top: 25px; }
+    20% { top: -25px; }
+    30% { top: 25px; }
+    40% { top: -25px; }
+    50% { top: 25px; }
+    60% { top: -25px; }
+    70% { top: 25px; }
+    80% { top: -25px; }
+    90% { top: 25px; }
+    100% { top: -25px; }
   }

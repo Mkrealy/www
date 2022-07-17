@@ -1,5 +1,5 @@
 const menuToggle = document.querySelector('.menu-toggle');
-const navigation = document.querySelector('.navigation');
+const navigation = document.querySelector('.navigation1');
 const aLink = document.querySelectorAll('.a-link');
 
 // this function is Disables links in sidebar and open the side bar on mobile mod
