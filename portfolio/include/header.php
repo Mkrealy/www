@@ -12,24 +12,22 @@
     <!-- font google -->
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- icon link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
 </head>
 
-<body class="body"
-    style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
-    
+<body class="body" style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
+
     
     <!-- main navbar  -->
+
     <div class="nav1">
         <ul style="z-index: 1;">
             <li id="navbutton" onclick="navbaroff();" style="padding-left: 0px;
               padding-right: 0px; " class="slider_button pc_off">
-                <span></span><span></span><span></span><span></span> <i id="navibutton"
-                    class="fa-xl fa-solid fa-code text"></i><a href="">
+                <span></span><span></span><span></span><span></span> <i id="navibutton" class="fa-xl fa-solid fa-code text"></i><a href="">
             </li></a>
             <li class="mobile_off" style="border-bottom-left-radius: 10px;border-top-left-radius: 10px;">
                 Home
@@ -60,7 +58,7 @@
                 </form>
             </div>
         </ul>
-        
+
     </div>
 
 
@@ -95,7 +93,7 @@
                             <p class="text">Contact</p>
                         </a>
                     </li>
-                    
+
 
                 </ul>
             </div>
@@ -103,68 +101,3 @@
 
     </div>
     <!-- main navbar  -->
-    <!-- main content  -->
-    <div class="main-content">
-        
-
-        <div class="content-text">
-            <div class="Iam">
-                <div class="innerIam">
-                    <p class="fs-6 color-text-w"> Hello, Welcome to my Website</p><br />
-                    <br>
-
-                </div>
-            </div>
-            <hr class="a-link">
-            <p class="fs-4 color-text-w"> Hi, I'm Mansur & I'm a "Full-Stack Developer"</p>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <img id="myimg" src="./images/image2.jpg" alt="Snow">
-                    <p class="fs-5 color-text-w"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="col-md-4 ">
-                    <img id="myimg" src="images/images1.jpg" alt="Snow">
-                    <p class="fs-5 color-text-w"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="col-md-4">
-                    <img id="myimg" src="images/images1.jpg" alt="Snow">
-                    <p class="fs-5 color-text-w"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="col-md-4">
-                    <img id="myimg" src="images/images1.jpg" alt="Snow">
-                    <p class="fs-5 color-text-w"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-
-            </div>
-
-        </div>
-
-
-    </div>
-        <!-- main content  -->
-        <!-- main footer  -->
-        
-    <div class="footer-dark">
-        <hr>
-            <div class="container">
-                <div class="row">
-                    <div class="col item social"><a href="#"><i class="icon ion-social-linkedin"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
-                </div>
-                <p class="copyright">Mansur KILIC © 2022</p>
-            </div>
-        <hr>
-    </div>
-            <!-- main footer  -->
-    <!-- javascript -->
-    <script>
-    </script>
-    <!-- js include -->
-    <script src="./js/script.js"></script>
-    <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-</body>
-
-</html>
